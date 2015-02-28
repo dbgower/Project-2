@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<HTML>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Section 1 Review</title>
+  </head>
+  <body>
+      <div class="bsd">BS"D</div>
+      <div class="lesson">
+        <h1>Lesson 1: HTML Attributes</h1>
+              <div class="lesson-content">
+                <h2>Anchor</h2>
+                  We began by looking at an anchor, this is a tag used for making links.<br>
+                  <span class="example">e.g. &lt;a href="www.google.com">link to google&lt;/a&gt;</span><br>
+                  href is the attribe name and "www.google.com" is the value<br>
+                  Here is the result: <a href="www.google.com">link to google</a>
+              </div>
+              <div class="lesson-content">
+                <h2>Images</h2>
+                  Next we looked at how to add an image.<br>
+                  <span class="example">e.g. &lt;img src="https://www.google.co.il/images/srpr/logo11w.png" alt="google logo"&gt;</span><br>
+                  img is a void tag, meaning there is no closing to the tag<br>
+                  alt= is required and is used to provide text if there is a broken link or for blind people<br>
+                  Here is how it looks:<br>
+                    <img src="https://www.google.co.il/images/srpr/logo11w.png" alt="google logo" style="width: 5%; height: 20%; margin: 5px; margin-bottom: -8px">
+              </div>
+              <div class="lesson-content">
+                <h2>Break</h2>
+                  A line break is entered by putting <span class="example">&lt;br&gt;</span>
+              </div>
+              <div class="lesson-content">              
+                <h2>Paragraph</h2>
+                  A paragraph is created by entering <span class="example">&lt;p&gt;</span> before the paragraph and <span class="example">&lt;/p&gt;</span> after the paragraph
+              </div>
+              <div class="lesson-content">
+                <h2>Inline / Block</h2>
+                  We then learnt the difference between inline and block. Break is an example of inline, simply like pressing enter on the keyboard. A paragraph is like creating a box around whatever is contained in the tag allowing further customization later on, this is a block.
+              </div>
+              <div class="lesson-content">
+                <h2>Span / Div</h2>
+                  We then looked at span and div tags. Again these are examples of inline and block tags. Span is inline and div is block.
+              </div>
+        </div>
+      <div class="lesson">
+        <h1>Lesson 2: Webpages, Documents and Structure</h1>
+              <div class="lesson-content">
+                <h2>HTML, CSS and JavaScript</h2>
+                  HTML provides the structure, CSS the style and JavaScript the interactive element allowing some changes.
+              </div>
+              <div class="lesson-content">
+                <h2>Tree-like Structure</h2>
+                  Websites are build using a tree-like structure, when using the developer tools one can see how different building blocks are used in the website creation. These buidling blocks enable the same piece of coding to be utilized in multiple areas of the same page without duplicating the code, saving time and ensuring consistency.
+              </div>
+              <div class="lesson-content">
+                <h2>What is the interaction between HTML, CSS and DOM</h2>
+                  HTML is a language which means it is made of syntax and rules. The language includes a tag which become the elements in the tree (the DOM).<br>
+                  For example: <br>
+                  <span class="example">&lt;h1 class = "attribute"&gt;</span><br>
+                  In this example h1 is the type of tag and the class is the attribute. <br>
+                  CSS changes how elements look on the page, e.g. the font size, color, background, etc. The HTML provides information for the browser about what style to use and where to get it.
+              </div>
+      </div>
+      <div class="lesson">
+        <h1>Lesson 3: Adding Style to HTML</h1>
+              <div class="lesson-content">
+                <h2>How to add CSS to HTML</h2>
+                  There are two ways to add CSS to HTML, either by linking to a separate CSS file or by adding the CSS into the same HTML page.<br>
+                  <div class="example">
+                    e.g.<br>
+                    &lt;head&gt;<br>
+                    &lt;link rel="stylesheet" type = "text/css" href = "style.css"&gt;<br>
+                    &lt;/head&gt;<br>
+                    <br>
+                    or <br>
+                    <br>
+                    &lt;head&gt;<br>
+                    &lt;style&gt;<br>
+                    div {<br>
+                    background-color:red;<br>
+                    }<br>
+                    &lt;/style&gt;
+                  </div>
+              </div>
+              <div class="lesson-content">
+                <h2>How to add a class</h2>
+                  <div class="example">
+                    e.g.<br>
+                    .description {<br>
+                    color.red;<br>
+                    }<br>
+                  </div>
+              </div>
+              <div class="lesson-content">
+                <h2>How to apply to all tags of the same type</h2>
+                  <div class="example">
+                    e.g.<br>
+                    p <br>
+                    color.red;<br>
+                    }<br>
+                  </div>
+              </div>
+              <div class="lesson-content">
+                <h2>How to add comments in CSS</h2>
+                 <span class="example"> /* comment */</span>
+              </div>
+              <div class="lesson-content">
+                <h2>Box Sizing</h2>
+                  There are two main things to remember:
+                  <ol>
+                  <li>Set sizes as percentages not pixels</li>
+                  <li>Set box-sizing attribute to border-box for every element</li>
+                  </ol>
+                  Divs are block elements so by default take the whole width, adding the rule <span class="example">display:flex</span> will override this and let divs appear next to each other
+              </div>
+      </div>
+    <article>
+      <h3>This concludes the first part of the nanodegree :)</h3>
+    </article>
+  </body>
+  </HTML>

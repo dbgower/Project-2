@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<HTML>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Section 2 Review</title>
+  </head>
+  <body>
+      <div class="bsd">BS"D</div>
+      <div class="lesson">
+        <h1>Lesson 1: Introduction to Serious Programming</h1>
+              <div class="lesson-content">
+                <h2>Why Programming Languages?</h2>
+                  Why do we need to use programming languages rather than natural language? There are 2 main reasons:
+                  <ul>
+                    <li>Ambiguity - natural languages may be interpreted by different people to mean different things</li>
+                    <li>Verbosity - natural langauges are generally complicated and difficult to state a simple function</li>
+                  </ul>
+              </div>
+              <div class="lesson-content">
+                <h2>Python</h2>
+                 We will be using Python because it's a relatively simple but powerful programming language.
+              </div>
+              <div class="lesson-content">
+                <h2>Numbers in Python</h2>
+                  It is important to note that decimal places are important when creating mathematical functions in Python:<br>
+                  For example: <br>
+                  <div class="example">
+                    5/2 = 2 <br>
+                    5.0/2 = 2.5 <br>
+                    5/2.0 = 2.5 <br>
+                  </div>
+              </div>
+      </div>
+      <div class="lesson">
+        <h1>Lesson 2: Variables and Strings</h1>      
+              <div class="lesson-content">             
+                <h2>Variables</h2>
+                  A variable is used to contain an expression which then may be used other times in the program without needing to reproduce the original expression, <span class="example"> e.g. the value of the speed of light may be stored as a variable rather than as a number.</span> Variables may also be changed so that the program can show the differences between calculations when the variable has been changed.<br>
+                  A variable is defined like this: <span class="example">variable_example = variable example</span> There cannot be any gaps in the name of the variable.<br>
+                  <strong>Note:</strong>There is a convention in Python that variables are lowercase.
+              </div>
+              <div class="lesson-content">
+                <h2>String</h2>
+                  A String is a series of characters surrounded by quotes.<br>
+                  e.g. <span class="example">'I'm a string'</span> <br>
+                  Strings need to start and end with the same quotation mark, either <span class="example">'</span> or <span class="example">"</span>. When printing a string quotes are needed otherwise the program will assume the string is a name of a variable and will either print the variable or display an error that the variable wasn't defined. Strings can be combined using <span class="example">+</span>
+              </div>
+              <div class="lesson-content">
+                <h2>Indexing Strings</h2>
+                  We are able to extract subsequences from Strings. E.g.<br>
+                    <div class= "example">
+                      'udacity'[0] --> 'u'<br>
+                       0123456<br>
+                      'udacity'[1+1] --> 'a'<br>
+                      school = "Udacity" <br>
+                      school[0] --> "U"
+                    </div><br>
+                  The indexing begins from 0. It is also possible to start from the end of the string by using negative numbers. E.g. <br>
+                    <string class="example">school[-1] --> "Y"</string>
+              </div>
+              <div class="lesson-content">
+                <h2>Selecting Subsequences</h2>
+                  We are able to print only a portion of a string too. E.g.<br>
+                    <div class="example">
+                      school = "Udacity"<br>
+                      print school[3] --> "c" (the 3rd character is printed<br>
+                      print school[4:6] --> "it" (the characters from the 4th to the 6th are printed) <br>
+                      print school[4:] --> "ity" (the characters from the 4th to the end are printed)<br>
+                      print school[:2] --> "Ud" (the characters from the beginning until the 2nd character are printed)<br>
+                      print school[:] --> "Udacity" (the characters from the beginning until the end are printed)
+                    </div><br>
+                  This technique may be used to extract the text from an HTML div or other text inside a tag. E.g.<br>
+                    <div class="example">
+                      html_div = "&lt;div&gt;This is some text&lt;/div>"<br>
+                      div_text = html_div[5:-6]<br>
+                      print div_text --> "This is some text"
+                    </div>
+              </div>
+              <div class="lesson-content">
+                <h2>Finding Strings in Strings</h2>
+                  Find is a built in function in Python. The output is the position in the string where the substring is the first occurence where found. If the target string is not found the output is "-1". E.g. <br>
+                    <div class="example">
+                      udacity = "An online school to study courses"<br>
+                      print udacity.find("online") --> "3"<br>
+                      print udacity.find("courses") --> "26"<br>
+                      print udacity.find("education") --> "-1"
+                    </div><br>
+                  We are not limited to finding just the first occurrence using the find function. E.g.
+                    <div class="example">
+                      print "test".find("t") --> "0" <br>
+                      print "test".find("t", 1) --> "3" <br>
+                    </div><br>
+                  <strong>Note: </strong>The find function is case-sensitive.<br>
+                  The portion being searched in referred to as the "parameter".
+              </div>
+      <div class="lesson">
+        <h1>Lesson 3: Input --> Function --> Output</h1>      
+              <div class="lesson-content">             
+                <h2>Functions</h2>
+                  Functions are used to enable an action with an input, returning the defined output. The definition must end with a ":". E.g.<br>
+                    <div class="example">
+                      def example(number):<br>
+                      &nbsp;   return number + 1<br>
+                      <br>
+                      print example(3) --> 4
+                    </div>
+                  <strong>Note: </strong>Return is necessary to give an output.<br>
+                  Functions may be used to perform computations of numbers or to combine strings.
+              </div>
+      </div>
+      <div class="lesson">
+        <h1>Lesson 4: Decisions and Repition</h1>      
+              <div class="lesson-content">             
+                <h2>Equality Comparisons</h2>
+                  Python enables Boolean values of True and False to be returned. E.g.<br>
+                    <div class="example">
+                      print 2 &lt; 3 ---> True<br>
+                      print 21 &lt; 3 ---> False<br>
+                      print 7 * 3 &lt; 3 ---> False<br>
+                      print 7 * 3 != 21 ---> False (not equal to)<br>
+                      print 7 * 3 == 21 ---> True (equal to requires 2 equals signs, because a single equals sign is used for an assignment)
+                    </div><br>
+                  We can also use <span class="example">else</span> with the <span class="example">if</span> statements to produce a function which shows the outcome for the if statement being met or not. E.g.<br>
+                    <div class="example">
+                      def equal(a, b): <br>
+                      &nbsp;if a == b: <br>
+                      &nbsp;   print a<br>
+                      &nbsp;else:<br>
+                      &nbsp;   print b<br>
+                    </div>
+              </div>
+              <div class="lesson-content">
+                <h2>Or</h2>
+                  Or may be used within an if statement to allow multiple tests to be conducted. E.g.<br>
+                    <div class="example">
+                      def is_friend(name):<br>
+                      &nbsp; return name[0] == "D" or name[0] = "N"<br>
+                    </div>
+                  <strong>Note: </strong>If the first expression evaluates to True the second expression is not evaluated.
+              </div>
+              <div class="lesson-content">
+                <h2>Max</h2>
+                  Max is used to return the biggest input.
+              </div> 
+              <div class="lesson-content">
+                <h2>While Loops</h2>
+                  Loops enable reptition. An <span class="example">if</span> test expression is executed only one time, whereas a test expression with the <span class="example">while</span> statement is executed multiple times. E.g.<br>
+                    <div class="example">
+                      i = 0<br>
+                      while i&lt;10:<br>
+                      &nbsp;print i<br>
+                      &nbsp;i = i + 1<br>
+                    </div>
+                  A loop which never stops is called an infinite loop.<br>
+              </div>
+              <div class="lesson-content">
+                <h2>Break Statements</h2>
+                  Break statements allow us to stop the loop while the condition is true.
+              </div>             
+      </div>
+      <div class="lesson">
+        <h1>Lesson 5: Structured Data: Lists and For Loops</h1>      
+              <div class="lesson-content">             
+                <h2>Strings vs Lists</h2> 
+                  Strings are a sequence of characters. E.g.<br>
+                    <div class="example">
+                    string = "hello"<br>
+                    string[0] --> "h"<br>
+                    string[2:4] --> "ll"<br>
+                    </div><br>
+                  Lists are as sequence of anything, each expression is separated by a comma and contained in quotation marks. E.g. <br>
+                    <div class="example">
+                    list = ["a","b","c","d","e"]<br>
+                    list[0] --> "a"<br>
+                    list[2:4] --> ["c", "d"]
+                    </div>
+              </div>
+              <div class="lesson-content">
+                <h2>Nested Lists</h2>
+                  Lists may be inserted in lists. The content of a specific list may be separated from the list. E.g.<br>
+                    <div class="example">
+                      beatles = [['John', 1940], ['Paul', 1942], ['George', 1943], ['Ringo', 1940]]<br>
+                      <br>
+                      print beatles[3] --> Ringo, 1942<br>
+                      print bealtes[3][0] --> Ringo<br>
+                      print beatles[3][1] --> 1940
+                    </div>
+              </div>
+              <div class="lesson-content">             
+                <h2>Mutation</h2>
+                  Mutation means the values of a list may be changed after a list has been created. E.g.<br>
+                    <div class="example">
+                      p = ["H","e","l","l","o"]<br>
+                      p[0] = "Y" <br>
+                      The first value of p has now been changed to "Y" from "H".
+                    </div>
+                  <strong>Note: </strong>Strings are immutable.
+              </div>
+              <div class="lesson-content">             
+                <h2>Aliasing</h2>   
+                  Aliasing is when there are two different ways to refer to the same object.
+              </div>
+              <div class="lesson-content">
+                <h2>List Operations</h2>
+                  <h3>Append</h3>
+                     Append is ued to add an element to a list. Append mutates the list. E.g. <br>
+                      <div class="example">
+                        beatles = ["John", "Paul", "Ringo", "George"]<br>
+                        beatles.append("Pete")<br>
+                        The list has now been changed, "Pete" has been added.
+                      </div>
+                  <h3>+</h3>
+                    + joins two lists together. E.g. <br>
+                      <div class="example">
+                        [0,1] + [2,3] --> [0,1,2,3] 
+                      </div>
+                  <h3>len (length)</h3>
+                    The output of len is the number of inputs on a list or the number of characters in a string. E.g.<br>
+                      <div class="example">
+                        len([0,1]) --> 2<br>
+                        len("Udacity") --> 7
+                      </div>
+              </div>
+              <div class="lesson-content">
+                <h2>For Loops</h2>
+                  A for loop is used to repeat a process a fixed number of times. A for loop may be used to print each value of a list separately. E.g. <br>
+                    <div class="example">
+                      def sum_list(list): <br>
+                      &nbsp; result = 0<br>
+                      &nbsp; for e in list:<br>
+                      &nbsp;    result = result + e<br>
+                      &nbsp; return result<br>
+                      <br>
+                      print sum_list([1,7,4]) --> 12<br>
+                      The for loop goes through the elements of the list.
+                    </div>
+              </div>
+              <div class="lesson-content">
+                <h2>Index</h2>
+                  The index function may be used to return position of the first time the value appears on a list.<br>
+                  <strong>Note: </strong>If the value is not in the list the index function returns an error. E.g. <br>
+                    <div class="example">
+                      p = [0, 1, 2] <br>
+                      print p.index[2] --> 2
+                    </div>
+              </div>
+              <div class="lesson-content">
+                <h2>In</h2>
+                  In is used to provide an output of true if a value is in a list, or false if not. E.g.<br>
+                    <div class="example">
+                      p = [0, 1, 2] <br>
+                      print 3 in p --> False <br>
+                      print 2 in p --> True
+                    </div>
+              </div>
+              <div class="lesson-content">
+                <h2>Not in</h2>
+                  Not in is the opposite of in and is used to provide an output of false if a value is in a list, or true if not. E.g.<br>
+                    <div class="example">
+                      p = [0, 1, 2] <br>
+                      print 3 not in p --> True <br>
+                      print 2 not in p --> False
+                    </div>
+              </div>
+        </div>
+  </body>
+  </HTML>
